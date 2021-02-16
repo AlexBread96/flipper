@@ -1,0 +1,58 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    background: url(../game/img/fon.jpg);
+    background-size: 100% 240px;
+}
+#cat{
+    width: 90px;
+    height: 60px;
+    background: url(../game/img/cat.png) ;
+    background-size: 100px 100px;
+    background-position: center center;
+    position: relative;
+    top: 140px;
+}
+#roll{
+    width: 60px;
+    height: 60px;
+    background: url(../game/img/roll.png) ;
+    background-size: 60px 60px;
+    position: relative;
+    top: 85px;
+    left: 520px;
+    animation: rollMov 1s infinite linear;
+}
+
+@keyframes rollMov{
+    from{
+        left: 520px;
+    }
+    to{
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump .5s linear;
+}
+
+@keyframes jump{
+    from{
+        top: 140px;
+    }
+    30%{
+        top: 90px;
+    }
+    50% {
+        top: 40px;
+    }
+    70%{
+        top: 90px;
+    }
+    to{
+        top: 140px;
+    }
+}
